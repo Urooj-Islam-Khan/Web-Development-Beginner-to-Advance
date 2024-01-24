@@ -1,0 +1,14 @@
+                                    HTML
+
+What is HTML?
+ Here are some points that can be defines what is html 
+1: HTML stands for Hyper Text Markup Language(HTML), it is the standard markup language for creating Web pages and it describes the structure of a Web page
+2: HTML consists of a series of elements and elements tell the browser how to display the content
+     HTML elements such as "this is a heading", "this is a paragraph", "this is a link", etc. 
+
+Explanation of Boiler plate of HTML5
+1:  The <!DOCTYPE html> declaration defines that this document is an HTML5 document
+2:  The <html> element is the root element of an HTML page
+3:  The <head> element contains meta information about the HTML page
+4:  The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+5:  The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
