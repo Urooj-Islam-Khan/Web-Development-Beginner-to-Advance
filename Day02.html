@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- to insert an image we use <img src="" alt=""> tag -->
+    <img height="400" width="300" src="/uroojanimate.jpg" alt="Urooj Islam">
+
+
+    <!-- 
+    The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+The <img> tag has two required attributes:
+
+src - Specifies the path to the image
+alt - Specifies an alternate text for the image -->
+
+
+    <table border="2px solid black"> <!--  <table>: Defines the table itself. -->
+        <caption>Employee Details</caption> <!-- To add a title to your table, you can use the <caption> element.  -->
+
+        <thead>
+            <!-- header content -->
+            <tr> <!--   <tr>: Used for table rows. -->
+                <th>Name</th> <!-- <th>: Used for table headings. -->
+                <th>designation</th>
+                <th>Fav Language</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Urooj</td> <!-- <td>: Used for table cells (data). -->
+                <td>19</td>
+                <td rowspan="2">Java</td>
+                <!-- we use rowspan to give a cell multiple rows -->
+            </tr>
+
+            <tr>
+                <td colspan=" 2">ALishba</td> <!-- we use colspan to give a cell multiple columns -->
+                <td>Python</td>
+            </tr>
+        </tbody>
+
+
+        <tfoot>
+            <td>footer</td>
+            <!-- footer content -->
+        </tfoot>
+    </table>
+
+
+
+</body>
+
+</html>
