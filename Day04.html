@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Forma" <title>Forms</title>
+</head>
+
+<body>
+  <form action="post">
+    <!-- GET aur POST HTTP methods web forms ke data ko server tak bhejne ke liye istemal hoti hain. Yeh dono tareeqe hain jis se client (jaise ke web browser) apne requests ko server tak pohanchata hai, lekin unke istemal aur tareeqe mein kuch farq hai:
+
+GET Method:
+
+GET method data ko URL ke through bhejta hai.
+Data ko URL ke saath bhejne ki wajah se, GET requests publicly visible hoti hain, jiska mtlab hai ke agar aap koi form submit karte hain, toh aapke dala hua data URL ke hisse mein dikhega.
+GET method typically information ko retrieve karne ke liye istemal hota hai, jaise ke search queries ya web pages ke navigation links.
+GET requests ko cache kiya ja sakta hai, jisse agar aap wahi request dobara karte hain, toh data server se phir se na leke aata hai, balke cache se mil jata hai.
+
+POST Method:
+
+POST method data ko request ke body mein bhejta hai, jo ke publicly visible nahi hoti.
+Data ko request body mein bhejne ki wajah se, POST requests secure hoti hain, kyun ke users ke dala hua data URL ke hisse mein nahi dikhta.
+POST method typically data ko server tak bhejne ke liye istemal hota hai, jaise ke form submissions ya sensitive information bhejne ke liye.
+POST requests ko cache nahi kiya ja sakta, matlab ke har bar server se data fresh milta hai. -->
+
+    <input type="text" name="text" value="name">
+    <br><br>
+    <!-- The "type" attribute specifies the type of input control (e.g., text, password, checkbox).
+
+The "name" attribute is used for identifying the control, especially when the data is sent to the server.
+
+The "value" attribute sets a default value for the control, which the user can overwrite. -->
+    <h2>Inputs types </h2>
+
+
+    <!-- Text input for username -->
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br><br>
+
+    <!-- Password input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+
+    <!-- email input  -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <!-- phone input  -->
+    <label for="Phone">Phone Number:</label>
+    <input type="tel" name="telephone" id="phone">
+    <br><br>
+
+    <!-- age input  -->
+    <label for="number">Age:</label>
+    <input type="number">
+    <br><br>
+
+    <!-- data input  -->
+    <label for="date"> Date of Birth:</label>
+    <input type="date" name="" id="">
+    <br><br>
+
+    <!-- Radio buttons for gender -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br><br>
+
+    <!-- range input  -->
+    <label for="range">Experience:  </label>
+    <input type="range">
+    <br><br>
+
+    <!-- search input  -->
+    <label for="serach">Search:</label>
+    <input type="search" name="" id="">
+    <br><br>
+
+    <!-- url input  -->
+    <label for="">Enter Url</label>
+    <input type="url" name="" id="">
+    <br><br>
+
+
+    <!-- color input  -->
+    <label for="color">Choose color</label>
+    <input type="color">
+    <br><br>
+
+
+
+    <!-- local date time input  -->
+    <label for="datetime"> Local Time</label>
+    <input type="datetime-local" name="" id="">
+    <br><br>
+
+    <!-- choose file  -->
+    <input type="file">
+    <br><br>
+
+    <!-- image input  -->
+    <input type="image" src="/uroojanimate.jpg" alt="" width="300">
+    <br><br>
+
+    <!-- textarea  -->
+    <textarea name="comment" rows="4" cols="50">
+    Enter your comment here...
+</textarea>
+    <br><br>
+
+    <!-- select  -->
+    <select name="fruits" id="fruits">
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="cherry">Cherry</option>
+    </select>
+    <br><br>
+    <!-- reset button  -->
+    <input type="reset" value="Reset">
+    <!-- Submit button -->
+    <input type="submit" value="Submit">
+    <br><br>
+
+    <!-- check box -->
+    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+    <label for="subscribe">Accept all termss</label>
+  </form>
+
+</body>
+
+</html>
