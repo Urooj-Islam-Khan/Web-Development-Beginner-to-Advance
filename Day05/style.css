@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+p {
+    background-color: aquamarine;
+}
+
+a {
+    color: white;
+    background-color: rgb(219, 32, 63);
+}
+
+div {
+    background-color: blueviolet;
+}
+
+span {
+    background-color: brown;
+}
