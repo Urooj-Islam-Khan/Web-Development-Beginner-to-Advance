@@ -1,0 +1,107 @@
+:root {
+    --primary-color: green;
+    --txt: white;
+    --sec-color: pink;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    top: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--sec-color);
+    height: 40px;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 4rem;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px 15px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+ul li:hover {
+    border-bottom: 2px solid var(--txt);
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    background-color: var(--primary-color);
+    width: 95vw;
+    height: 80vh;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box1 {
+    background-color: rgb(229, 170, 97);
+    width: 500px;
+    height: 400px;
+    /* position: absolute;
+    left: 10rem; */
+}
+
+.box2 {
+    background-color: rgb(135, 138, 235);
+    width: 500px;
+    height: 400px;
+}
+
+section {
+    /* background-color: blue; */
+    display: flex;
+}
+
+.welcome {
+    /* background-color: pink; */
+    width: 80%;
+    margin: auto;
+    color: var(--txt);
+}
+
+.welcome p {
+    margin: 10px;
+    border: 2px solid var(--txt);
+    border-radius: 20px;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+}
+
+svg {
+    position: relative;
+    right: 3rem;
+    bottom: 0.5rem;
+}
+
+footer {
+    background-color: #fff;
+    height: 80px;
+}
