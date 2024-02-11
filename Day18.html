@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Unit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+
+        .box {
+            /* the pixel is 196th of an inch  */
+            width: 230px;
+            /* width: 100vw; it makes width equal nto viewport; */
+            width: 80vw;
+            margin: auto;
+            /*it will center it if the element is block */
+            border: 2px solid black;
+            height: 80vh;
+            /*it makes width equal nto viewport;*/
+            font-size: 15px;
+        }
+
+        .box>p {
+            font-size: 2em;
+            /* it makes it 2 times of what it inherits;*/
+
+        }
+
+        .container {
+            width: 80vw;
+            height: 80vh;
+            margin: 20px auto;
+            border: 2px solid black;
+            min-height: 80vh;
+        }
+
+        .container p {
+            font-size: 2rem;
+            /* it makes it 2 times of root element;*/
+        }
+
+        .mycontainer {
+            background-color: yellow;
+            color: palevioletred;
+            font-size: 22px;
+            width: 100vmax;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>I am a box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam amet error, cupiditate obcaecati provident
+            officiis beatae quos perferendis nihil. Laborum unde voluptates porro?</p>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae perspiciatis tempora voluptate officia
+            nostrum quLorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum laboriosam repellendus?
+        </p>
+    </div>
+
+    <div class="mycontainer">
+        i am another container
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+
+        .box1 {
+            padding: 10px;
+            color: white;
+        }
+
+        .box2 {
+            margin: 10px;
+            color: rgb(25, 13, 193);
+            border: 2px solid rgb(31, 81, 160);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS Box Model consist of  -->
+    <!-- 1: Content: The content area is defined by the width and height properties. -->
+    <!-- 2: Padding:The space between the actual content and the border of the element is the padding. -->
+    <!-- 3: Border: The border surrounds the content and padding and gives the visual border of the element. -->
+    <!-- 4: Margin: The margin is the space outside the element that separates it from other elements in the layout. -->
+    <div class="box box1">
+        i am a box
+    </div>
+    <div class="box box2">
+        i am a another box
+    </div>
+</body>
+
+</html>

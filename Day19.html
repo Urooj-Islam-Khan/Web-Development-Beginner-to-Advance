@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            border: 2px solid seagreen;
+            display: inline;
+            /*
+          used to make block element inline*/
+            padding: 10px;
+            display: inline-block;
+            width: 50px;
+            /*it is used bcz in inline top padding and margin is not working and also for width */
+            /* display: none; */
+            /*it will remove also the space it taking */
+            /*visibility: hidden;*/
+            /*it will hide only the content but taken that place */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        I am a Box
+    </div>
+    <div class="box">
+        also a box
+    </div>
+    <span>i am a span</span>
+    <span>i am second span</span>
+</body>
+
+</html>
