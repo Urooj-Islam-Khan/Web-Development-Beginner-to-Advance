@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            height: 140px;
+            width: 80vw;
+            padding: 143px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        .parent {
+            padding: 45px;
+            margin: 30px;
+
+            border: 2px solid black;
+            /* position: relative; */
+        }
+
+        .box1 {
+            /* left: 3px; */
+            background-color: palevioletred;
+            position: sticky;
+        }
+
+        .box2 {
+            position: relative;
+            /*jo iski apni jaga hai wahan se hat kr iski position change hogi or ksi element pr frk nhi prega*/
+            top: 60px;
+            left: 100px;
+            background-color: yellow;
+        }
+
+        .box3 {
+            background-color: blueviolet;
+            position: fixed;
+            /* it will stick at it's place */
+            z-index: 3;
+        }
+
+        .box4 {
+            position: absolute;
+            /*  ye nearest ancestor k position pr lgta hai jis ki position staticna ho */
+            top: 0px;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1">
+        </div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
