@@ -1,0 +1,41 @@
+/* naming the area  */
+
+.main {
+    margin: 10px;
+    border: 2px solid blue;
+    display: grid;
+    grid-template-areas: "nav nav nav"
+        "side article article"
+        "footer footer footer";
+
+}
+
+.box {
+    border: 2px solid brown;
+    height: 55px;
+    /* width: 55px; */
+}
+
+#box1 {
+    grid-area: nav;
+    background-color: aqua;
+}
+
+#box2 {
+    grid-area: side;
+    background-color: blueviolet;
+}
+
+#box3 {
+    grid-area: article;
+    background-color: chartreuse;
+}
+
+#box4 {
+    grid-area: footer;
+    background-color: darkgoldenrod;
+}
+
+#box5 {
+    grid-area: nav;
+}

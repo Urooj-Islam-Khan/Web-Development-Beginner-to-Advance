@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 20px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: [first]120px [second]100px [third];
+    grid-template-rows: 100px 100px 100px;
+    /* grid line
+    grid cell 
+    grid track 
+    grid cell  */
+}
+
+.item {
+    height: 55px;
+    width: 55px;
+    border: 2px solid red;
+}
+
+.item-4 {
+    grid-row: 1/2;
+    /* oryou can write like this  */
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: first/3;
+    border: 2px solid blue;
+}
+
+.item-1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}

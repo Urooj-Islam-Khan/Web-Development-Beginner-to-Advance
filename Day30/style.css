@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*these are the properties whic is use in container
+ */
+.container1 {
+    width: 500px;
+    border: 3px solid rgb(198, 8, 147);
+    display: flex;
+    /*`display: flex;` sets the element as a flex container, allowing its children to be laid out using flexbox properties.*/
+    justify-content: center;
+    /*`justify-content: center;` centers items along the main axis of a flex container.*/
+
+    /* for horizontal centre or it see the main axis then make it centre if the flexdirection is row it center the div horizontally or if flex direction is column it center the div vertically*/
+}
+
+.container2 {
+    width: 500px;
+    border: 3px solid rgb(198, 8, 147);
+    display: flex;
+    justify-content: flex-start;
+    /*`justify-content: flex-start;` aligns items to the start of the main axis in a flex container.*/
+}
+
+.container3 {
+    width: 500px;
+    border: 3px solid rgb(198, 8, 147);
+    display: flex;
+    justify-content: flex-end;
+    /* `justify-content: flex-end;` aligns items to the end of the main axis in a flex container.*/
+
+}
+
+.container4 {
+    width: 500px;
+    border: 3px solid rgb(198, 8, 147);
+    display: flex;
+    justify-content: space-around;
+    /*`justify-content: space-around;` evenly distributes items along the main axis with equal space around them in a flexbox container.*/
+}
+
+.container5 {
+    width: 500px;
+    border: 3px solid rgb(198, 8, 147);
+    display: flex;
+    justify-content: space-between;
+    /* `justify-content: space-between;` evenly distributes items along the main axis in a flex container, with the first item aligned to the start and the last item aligned to the end, and the remaining space evenly distributed between them.*/
+}
+
+.container6 {
+    width: 500px;
+    border: 3px solid rgb(198, 8, 147);
+    display: flex;
+    justify-content: space-evenly;
+    /* `justify-content: space-evenly;` distributes space evenly between and around items in a flex container, including both the space between each pair of adjacent items and the space at the start and end of the container.*/
+}
+
+.container7 {
+    width: 500px;
+    height: 30vh;
+    border: 3px solid rgb(198, 8, 147);
+    display: flex;
+    align-items: end;
+    /*`align-items: end;` aligns the items at the end of the cross axis within a flex container.*/
+}
+
+.container8 {
+    width: 500px;
+    height: 30vh;
+    border: 3px solid rgb(198, 8, 147);
+    display: flex;
+    align-items: flex-start;
+    /*`align-items: flex-start;` aligns the items at the start of the cross axis within a flex container.*/
+}
+
+.container9 {
+    width: 500px;
+    height: 30vh;
+    border: 3px solid rgb(198, 8, 147);
+    display: flex;
+    align-items: center;
+    /* `align-items: center;` aligns the items at the center of the cross axis within a flex container.*/
+}
+
+.container10 {
+    width: 500px;
+    height: 20vh;
+    border: 3px solid rgb(198, 8, 147);
+    display: flex;
+    flex-direction: column;
+    /*`flex-direction: column;` arranges flex container items vertically, stacking them along the column axis instead of the default horizontal row axis.*/
+}
+
+.container11 {
+    width: 100%;
+    height: 50vh;
+    border: 3px solid rgb(198, 8, 147);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /*`flex-wrap: wrap;` allows flex container items to wrap onto multiple lines if they exceed the available space along the main axis.*/
+    align-content: center;
+    /*use when we have multiple lines*/
+    /*`align-content: center;` aligns flex container lines at the center of the cross axis when there is extra space in the cross axis of the flex container.*/
+    flex-wrap: wrap-reverse;
+    /* `flex-wrap: wrap-reverse;` wraps flex container items onto multiple lines, but in reverse order, starting from the opposite direction of the main axis. */
+    flex-flow: row wrap;
+    /*  `flex-flow: row wrap;` sets the flex direction as row and allows flex container items to wrap onto multiple lines if they exceed the available space along the main axis.*/
+    gap: 10px;
+    /* - `gap: 10px;`: Sets the gap between grid or flex items in both the row and column directions to 10 pixels. */
+    row-gap: 10px;
+    /* - `row-gap: 10px;`: Sets the gap between grid or flex items in the row direction to 10 pixels. */
+    column-gap: 20px;
+    /* 
+    - `column-gap: 20px;`: Sets the gap between grid or flex items in the column direction to 20 pixels. */
+}
+
+.item {
+    height: 80px;
+    width: 80px;
+    background-color: blueviolet;
+    border: 1px solid black;
+    margin: 4px;
+    flex-grow: 1;
+}
+
+/*these are the properties whic is use in container*/
+
+.container12 {
+    height: 40vh;
+    width: 500px;
+    display: flex;
+    color: white;
+    border: 3px solid rgb(198, 8, 147);
+}
+
+.order-1 {
+    order: 1;
+    /* `order: 1;` sets the order of a flex item within a flex container. It determines the order in which the flex items are displayed along the main axis, overriding the default order based on their source code order. Items with a higher order value will appear later in the order compared to items with a lower order value. */
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+
+.container13 {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    border: 3px solid rgb(198, 8, 147);
+}
+
+.item1 {
+    flex-grow: 2;
+    /*`flex-grow: 2;` determines the ability of a flex item to grow relative to the other flex items in the container. In this case, the item will grow twice as much as the other items in the container when there is available space along the main axis.*/
+}
+
+.item2 {
+    flex-shrink: 2;
+    /* 
+    `flex-shrink: 2;` defines the ability of a flex item to shrink relative to the other flex items in the container. In this case, the item will shrink twice as much as the other items in the container if there is not enough space along the main axis. */
+}
+
+.item3 {
+    align-self: flex-start;
+}

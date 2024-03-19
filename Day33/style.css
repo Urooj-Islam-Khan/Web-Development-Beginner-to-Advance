@@ -1,0 +1,49 @@
+/* naming the area  */
+
+.main {
+    margin: 10px;
+    border: 2px solid blue;
+    display: grid;
+    width: 80vw;
+    height: 50vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; mean it is 1/3 of the view port  */
+    grid-template-columns: repeat(4, 1fr);
+    /* 1fr ko repeat krne k lie ye function use hota hai  */
+    grid-template-columns: repeat(4, minmax(100px, 80px));
+    grid-template-rows: repeat(2, minmax(100px, 80px));
+    gap: 10px 20px;
+    /* row  column */
+    justify-items: center;
+    align-items: center;
+    place-content: center;
+    /*isse se justify content or aling item dono center hojaeinge*/
+}
+
+.box {
+    /* border: 2px solid brown; */
+    height: 55px;
+    width: 55px;
+}
+
+#box1 {
+    background-color: aqua;
+}
+
+#box2 {
+    background-color: blueviolet;
+}
+
+#box3 {
+    background-color: chartreuse;
+}
+
+#box4 {
+    background-color: darkgoldenrod;
+}
+
+#box5 {
+    background-color: firebrick;
+    align-self: start;
+    justify-self: end;
+}
