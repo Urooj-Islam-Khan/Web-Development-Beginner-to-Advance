@@ -1,0 +1,40 @@
+.box:first-child {
+    background-color: pink;
+}
+
+.box::first-line {
+    color: yellow;
+}
+
+.boxes * {
+    border: 2px solid slateblue;
+}
+
+[data-color=primary] {
+    margin: 20px;
+    /* jisme data-color primary hoga usor ye pply hogi*/
+}
+
+.boxes::before {
+    content: "I am Before";
+}
+
+.boxes::after {
+    content: "I am After";
+}
+
+::selection {
+    color: aqua;
+    background-color: black;
+
+}
+
+.box::first-letter {
+    font-size: 30px;
+    color: rgb(63, 120, 205);
+}
+
+.input::placeholder {
+    color: grey;
+
+}

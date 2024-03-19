@@ -1,0 +1,23 @@
+.cards {
+    border: 2px solid black;
+    display: flow-root;
+    /* This is the method to bring the image under the border so that there is no overflow. */
+}
+
+.card {
+    border: 2px solid rgb(32, 218, 48);
+}
+
+.card:nth-child(3) {
+    clear: right;
+    /* it's mean this card do not want any floating element  */
+    /* clear: left; */
+    /* clear: both; */
+}
+
+img {
+    width: 300px;
+    float: right;
+    /* it makes the image to stay in left and content will come right to it*/
+
+}
