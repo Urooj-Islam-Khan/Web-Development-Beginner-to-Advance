@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(195, 51, 75);
+}
+
+
+.boxes {
+    display: flex;
+}
+
+.box {
+    background-color: pink;
+    width: 300px;
+    height: 300px;
+    padding: 3px;
+    margin: 3px;
+}
+
+@media screen and (orientation) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media only screen and (max-width:455px) {
+    body {
+        background-color: blueviolet;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+}
+
+/* @media not||oly mediatype and (expression){
+    CSS Code
+} */
