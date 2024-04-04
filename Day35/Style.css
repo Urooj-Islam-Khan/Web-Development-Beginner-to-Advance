@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: brown;
+    width: 50vw;
+    height: 40vh;
+}
+
+.box {
+    background-color: royalblue;
+    width: 5vw;
+    height: 4vh;
+    transition-property: transform;
+    /*kispr transition lge */
+    transition-duration: 3s;
+    /*kitni dair chalega */
+    transition-timing-function: ease-in-out;
+    /*kese chalega*/
+    transition-delay: 1s;
+    /* kitni dair baad chaega*/
+    transition-property: all;
+}
+
+.translate {
+    transform: translateX(10vw) translateY(10vh) scale(2);
+    background-color: blue;
+}

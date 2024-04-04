@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(9, 106, 106);
+    height: 50vh;
+    width: 30vw;
+
+}
+
+.box {
+    width: 34px;
+    height: 45px;
+    background-color: aqua;
+    animation-name: myanimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    /* animation-direction: alternate-reverse; */
+    animation-fill-mode: forwards;
+    /* animation-play-state: paused; */
+}
+
+
+@keyframes myanimation {
+    0% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: red;
+        transform: translateX(700px)
+    }
+}
+
+.circle {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid rgb(240, 171, 182);
+    border-top: 5px solid rgb(229, 12, 48);
+    margin: 20px;
+    animation: loader 2s ease-in-out infinite;
+}
+
+@keyframes loader {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(100deg);
+    }
+
+    50% {
+        transform: rotate(200deg);
+    }
+
+    75% {
+        transform: rotate(300deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
