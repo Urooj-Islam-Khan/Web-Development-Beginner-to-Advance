@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    border: 2px solid black;
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    background: url(/img.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+img {
+
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    /*isme ye pic ko crop krdega*/
+    object-fit: contain;
+    /*isme ye pic puri lega*/
+    object-fit: fill;
+    /* ye default hota hai */
+    object-fit: scale-down;
+    /* ye pic ko chota krdega  */
+    object-position: top right;
+    object-position: top left;
+    /* pic ko position dene ka   */
+    object-position: 10px 20px;
+    /* jahan chahe wajan pic la skte hain  */
+}
