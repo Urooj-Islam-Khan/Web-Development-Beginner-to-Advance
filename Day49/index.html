@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- write a program to calculate a factorial of a number using reduce and using for loop  -->
+
+
+    <script>
+        // function factorial(num) {
+        //     // Base case: If the number is 0 or 1, factorial is 1
+        //     if (num === 0 || num === 1) {
+        //         return 1;
+        //     } else {
+        //         // Recursive case: Multiply the number by the factorial of (number - 1)
+        //         return num * factorial(num - 1);
+        //     }
+        // }
+
+        // // Example usage:
+        // const number = 4;
+        // const result = factorial(number);
+        // console.log("Factorial of", number, "is:", result);
+
+        // let n = 5;
+        // let ans = 1;
+        // for (let i = 2; i <= n; i++) {
+        //     ans *= i;
+        // }
+        // console.log(ans)
+
+        // by reducing
+
+        let arr = [1, 2, 3, 4,]
+
+        console.log(arr.reverse())
+        const fact = (a, b) => {
+            return a * b
+        }
+        console.log(arr.reduce(fact))
+
+
+        // by loop 
+        function factorial(num) {
+            let ans = 1;
+            for (let i = 2; i <= num; i++) {
+                ans *= i;
+            }
+            return ans
+        }
+        console.log(factorial(4))
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
