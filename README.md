@@ -128,7 +128,7 @@ Semantic HTML elements clearly describe their meaning in a human- and machine-re
     </article>
 </main>
 <footer>
-    <p>© 2024 My Website</p>
+    <p>Urooj Islam© 2024 My Website</p>
 </footer>
 ```
 
@@ -162,18 +162,7 @@ Making web content accessible to all users, including those with disabilities.
 - `alt`: Provides alternative text for images.
 - `aria-label`: Provides an accessible name for interactive elements.
 
-## 10. Best Practices
-Techniques for writing clean and effective HTML.
-
-```html
-<div class="container">
-    <p>This is a properly nested and organized HTML structure.</p>
-</div>
-```
-
-- Properly nesting elements and using meaningful tag names for clarity and maintainability.
-
-## 11. Responsive Design
+## 10. Responsive Design
 Techniques for making web pages look good on all devices.
 
 ```html
@@ -182,7 +171,7 @@ Techniques for making web pages look good on all devices.
 
 - `<meta name="viewport">`: Ensures that the page scales correctly on different devices.
 
-## 12. SEO Basics
+## 11. SEO Basics
 Using HTML to improve search engine visibility.
 
 ```html
@@ -192,7 +181,7 @@ Using HTML to improve search engine visibility.
 
 - `<title>`: Sets the page title shown in search results.
 - `<meta name="description">`: Provides a description of the page content for search engines.
-```
+  
 
 
 # CSS Learning Guide
@@ -467,6 +456,265 @@ p::after {
 - `::before` and `::after`: Insert content before or after an element's content.
 - `content`: Specifies the content to insert.
 
-Feel free to copy and paste this into your README file on GitHub to help guide your CSS learning journey!
+
+
+
+
+# JavaScript Learning Guide
+
+## 1. Basic Syntax
+JavaScript is a programming language used to create dynamic content on webpages.
+
+**Syntax**:
+```javascript
+// This is a single-line comment
+
+/* This is a multi-line comment */
+
+var variableName = value; // Declare a variable
 ```
+
+**Example**:
+```javascript
+let greeting = "Hello, World!";
+console.log(greeting); // Outputs: Hello, World!
+```
+
+- `var`, `let`, and `const`: Keywords for declaring variables.
+- `console.log()`: Prints output to the console.
+
+## 2. Data Types
+JavaScript supports various data types.
+
+**Syntax**:
+```javascript
+let number = 42;             // Number
+let string = "Hello";        // String
+let boolean = true;          // Boolean
+let object = { key: "value" };// Object
+let array = [1, 2, 3];       // Array
+let func = function() {};    // Function
+```
+
+- `Number`, `String`, `Boolean`, `Object`, `Array`, `Function`: Different types of data in JavaScript.
+
+## 3. Operators
+JavaScript provides various operators for performing operations.
+
+**Syntax**:
+```javascript
+let sum = 5 + 3;            // Arithmetic Operator
+let isEqual = (5 == 5);     // Comparison Operator
+let andCondition = (true && false); // Logical Operator
+```
+
+- `+`, `-`, `*`, `/`: Arithmetic Operators.
+- `==`, `===`, `!=`, `!==`: Comparison Operators.
+- `&&`, `||`, `!`: Logical Operators.
+
+## 4. Functions
+Functions are blocks of code designed to perform a particular task.
+
+**Syntax**:
+```javascript
+// Function Declaration
+function greet(name) {
+    return "Hello, " + name;
+}
+
+// Function Expression
+const square = function(number) {
+    return number * number;
+};
+
+// Arrow Function
+const add = (a, b) => a + b;
+```
+
+- `function`: Keyword for declaring a function.
+- `return`: Specifies the value to return from the function.
+- `=>`: Arrow function syntax.
+
+## 5. Control Structures
+Control structures help in making decisions and repeating tasks.
+
+**Syntax**:
+```javascript
+// If-Else Statement
+if (condition) {
+    // Code to execute if condition is true
+} else {
+    // Code to execute if condition is false
+}
+
+// Switch Statement
+switch (expression) {
+    case value1:
+        // Code to execute for value1
+        break;
+    case value2:
+        // Code to execute for value2
+        break;
+    default:
+        // Code to execute if no cases match
+}
+```
+
+- `if`, `else if`, `else`: Conditional statements.
+- `switch`, `case`, `default`: Switch-case control structure.
+
+## 6. Loops
+Loops are used to repeat a block of code multiple times.
+
+**Syntax**:
+```javascript
+// For Loop
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+// While Loop
+let count = 0;
+while (count < 5) {
+    console.log(count);
+    count++;
+}
+
+// Do-While Loop
+let number = 0;
+do {
+    console.log(number);
+    number++;
+} while (number < 5);
+```
+
+- `for`, `while`, `do-while`: Different types of loops for iteration.
+
+## 7. Arrays
+Arrays are used to store multiple values in a single variable.
+
+**Syntax**:
+```javascript
+let fruits = ["Apple", "Banana", "Cherry"];
+console.log(fruits[0]); // Outputs: Apple
+
+// Array Methods
+fruits.push("Date");     // Add an item to the end
+fruits.pop();            // Remove the last item
+fruits.shift();          // Remove the first item
+fruits.unshift("Apricot");// Add an item to the beginning
+```
+
+- `[]`: Array notation.
+- `push()`, `pop()`, `shift()`, `unshift()`: Array methods for modifying arrays.
+
+## 8. Objects
+Objects are used to store collections of data.
+
+**Syntax**:
+```javascript
+let person = {
+    name: "John",
+    age: 30,
+    greet: function() {
+        return "Hello, " + this.name;
+    }
+};
+
+console.log(person.name); // Outputs: John
+console.log(person.greet()); // Outputs: Hello, John
+```
+
+- `{}`: Object notation.
+- `this`: Refers to the current object.
+
+## 9. DOM Manipulation
+JavaScript can be used to interact with and modify the DOM (Document Object Model).
+
+**Syntax**:
+```javascript
+// Selecting an element
+let element = document.getElementById("myElement");
+
+// Changing content
+element.innerHTML = "New Content";
+
+// Adding an event listener
+element.addEventListener("click", function() {
+    alert("Element clicked!");
+});
+```
+
+- `document.getElementById()`: Selects an element by ID.
+- `innerHTML`: Changes the content of an element.
+- `addEventListener()`: Attaches an event handler to an element.
+
+## 10. Events
+Events are actions that occur in the browser, such as user interactions.
+
+**Syntax**:
+```javascript
+// Click Event
+document.getElementById("myButton").addEventListener("click", function() {
+    alert("Button clicked!");
+});
+
+// Mouseover Event
+document.getElementById("myElement").addEventListener("mouseover", function() {
+    console.log("Mouse over element");
+});
+```
+
+- `click`, `mouseover`, `keydown`: Common event types.
+
+## 11. Error Handling
+JavaScript allows handling errors using `try...catch`.
+
+**Syntax**:
+```javascript
+try {
+    // Code that may throw an error
+    let result = riskyFunction();
+} catch (error) {
+    // Code to handle the error
+    console.log("An error occurred: " + error.message);
+} finally {
+    // Code that always runs, regardless of error
+    console.log("Finally block executed.");
+}
+```
+
+- `try`, `catch`, `finally`: Blocks for handling exceptions.
+
+## 12. Asynchronous JavaScript
+JavaScript can handle asynchronous operations using callbacks, promises, and async/await.
+
+**Syntax**:
+```javascript
+// Callback
+function fetchData(callback) {
+    setTimeout(() => callback("Data fetched"), 1000);
+}
+
+fetchData(data => console.log(data));
+
+// Promise
+let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("Data fetched"), 1000);
+});
+
+promise.then(data => console.log(data));
+
+// Async/Await
+async function fetchData() {
+    let data = await new Promise(resolve => setTimeout(() => resolve("Data fetched"), 1000));
+    console.log(data);
+}
+
+fetchData();
+```
+
+- `callback`: Function passed as an argument to another function.
+- `Promise`: Object representing the eventual completion or failure of an asynchronous operation.
+- `async/await`: Syntax for working with promises in a more readable way.
 
