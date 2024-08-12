@@ -1,6 +1,6 @@
 
 
-# HTML Learning Guide
+# HTML Learning Guide By Urooj Islam
 
 ## 1. Basic Structure
 The basic structure of an HTML document includes the doctype declaration, root element, and child elements.
@@ -184,7 +184,7 @@ Using HTML to improve search engine visibility.
   
 
 
-# CSS Learning Guide
+# CSS Learning Guide  By Urooj Islam
 
 ## 1. Basic Syntax
 CSS (Cascading Style Sheets) controls the layout and appearance of HTML elements.
@@ -460,7 +460,7 @@ p::after {
 
 
 
-# JavaScript Learning Guide
+# JavaScript Learning Guide By Urooj Islam
 
 ## 1. Basic Syntax
 JavaScript is a programming language used to create dynamic content on webpages.
