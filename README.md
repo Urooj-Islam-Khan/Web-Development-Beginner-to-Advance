@@ -1,5 +1,3 @@
-
-
 # HTML Learning Guide By Urooj Islam
 
 ## 1. Basic Structure
