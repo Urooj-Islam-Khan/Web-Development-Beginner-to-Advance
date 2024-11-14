@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/fontawesome-free-6.5.2-web/css/all.css">
+    <link href="assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "j8_JcGxnS26954R4i",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#about"><img src="assets/images/logo.png" alt="" class="logo-img img-fluid"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <button class="btn ms-2" id="themeToggle"><i class="fa-solid fa-sun"></i></button>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#carouselExampleCaptions">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#project-showcase">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#my-skills" id="skills">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-collaboration">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- quick about us  -->
+    <div id="Quick-Connect">
+        <div class="about-me">
+            <i class="fa-solid fa-xmark" id="close"></i>
+
+            <div class="about-content">
+                <h3>About Me</h3>
+                <p>Hello I'am <strong>Urooj Islam</strong>, a dedicated <strong>Software Engineering student</strong>
+                    with a strong passion for <strong>web development</strong>.
+                    With
+                    hands-on experience in <strong>front-end technologies</strong> like <strong>HTML, CSS, JavaScript,
+                        jQuery,
+                        and Bootstrap</strong>, I
+                    have honed my skills in creating <strong>visually appealing</strong> and <strong>responsive
+                        websites</strong>. My
+                    understanding of <strong>UI design</strong> principles further enhances my ability to deliver
+                    user-friendly interfaces.</p>
+            </div>
+            <p id="headskills">My Skills</p>
+            <div id="keywords">
+                <h6>#Frontend_Developer</h6>
+                <h6>#Responsive_Designer</h6>
+                <h6>#Strong_Communication</h6>
+                <h6>#UI_Designer (Figma)</h6>
+                <h6>#Mobile_Application_Developer</h6>
+                <h6>#Collaborative</h6>
+                <h6>#Team Managent</h6>
+                <h6>#Graphic_Designer (Illustrator)</h6>
+                <h6>#Creativity</h6>
+                <h6>#Adaptability</h6>
+            </div>
+
+            <div class="skills-icon">
+
+                <!-- HTML -->
+                <div class="icon">
+                    <img src="assets/images/html.png" alt="HTML Icon">
+                    <div class="tooltip">HTML</div>
+                </div>
+                <!-- CSS -->
+                <div class="icon">
+                    <img src="assets/images/css.png" alt="CSS Icon">
+                    <div class="tooltip">CSS</div>
+                </div>
+                <!-- JS -->
+                <div class="icon">
+                    <img src="assets/images/js.png" alt="JavaScript Icon">
+                    <div class="tooltip">JavaScript</div>
+                </div>
+                <!-- RD -->
+                <div class="icon">
+                    <img src="assets/images/responsive.png" alt="JavaScript Icon">
+                    <div class="tooltip">Responsive Designs</div>
+                </div>
+                <!-- MAD -->
+                <div class="icon">
+                    <img src="assets/images/app-development.png" alt="JavaScript Icon">
+                    <div class="tooltip">Mobile Application Developer</div>
+                </div>
+                <div class="icon">
+                    <img src="assets/images/java.png" alt="JavaScript Icon">
+                    <div class="tooltip">Java</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <span class="about-form">
+            <form class="contact-form">
+                <h2>Contact Me</h2>
+                <div class="form-group mb-3">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" id="email_id" name="email_id" class="form-control" placeholder="Your Email"
+                        required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your Message"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="sendMail()">Send Message</button>
+            </form>
+
+            <div id="connectme" class="mt-4">
+                <h5>Connect with me:</h5>
+                <ul class="social-links list-inline">
+                    <li class="list-inline-item"><a href="https://github.com/Urooj-Islam-Khan"
+                            target="_blank">Github</a>
+                    </li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/urooj-islam-734488255/"
+                            target="_blank">LinkedIn</a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/the_urooj_islam/"
+                            target="_blank">Instagram</a></li>
+
+                    <li class="list-inline-item"><a href="https://thecodingroom1.blogspot.com/" target="_blank">Blog</a>
+                    </li>
+                </ul>
+                <a href="resume.pdf" class="btn btn-primary mt-3" download>Download Resume</a>
+            </div>
+        </span> -->
+    </div>
+
+
+    <!-- Hero Section -->
+    <div id="carouselExampleCaptions hero" class="carousel slide" data-bs-ride="carousel">
+        <div class="social-media">
+            <a href="https://thecodingroom1.blogspot.com/" alt="Blog"><i class="fa-solid fa-blog"></i></a>
+            <a href="https://www.instagram.com/the_urooj_islam/" alt="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/urooj-islam-734488255/" alt="Linkedin"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Urooj-Islam-Khan" alt="github"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="pages-link">
+            <a href="#carouselExampleCaptions" alt="home"><i class="fa-solid fa-house"></i></a>
+            <a href="#project-showcase" alt="Projects"><i class="fa-solid fa-briefcase"></i></a>
+            <a href="#my-skills" alt="skills"><i class="fa-solid fa-cog"></i></a>
+            <a href="#blog" alt="blog"><i class="fa-solid fa-blog"></i></a>
+            <a href="#contact-collaboration" alt="contact"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/portfoliobg.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p>Your go-to source for elegant and impactful web design and development.</p>
+                    <a href="#project-showcase" class="btn">Explore Projects</a>
+                    <a href="My Resume.pdf" class="btn resume" download>Download Resume</a>
+                    <button type="button" class="btn about-btn" id="about-btn">About Me</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/image_1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p>Your go-to source for elegant and impactful web design and development.</p>
+                    <a href="#project-showcase" class="btn">Explore Projects</a>
+                    <a href="My Resume.pdf" class="btn resume" download>Download Resume</a>
+                    <button type="button" class="btn about-btn" id="about-btn">About Me</button>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+                <img src="assets/images/image_2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p>Your go-to source for elegant and impactful web design and development.</p>
+                    <a href="#project-showcase" class="btn">Explore Projects</a>
+                    <a href="My Resume.pdf" class="btn resume" download>Download Resume</a>
+                    <button type="button" class="btn about-btn" id="about-btn">About Me</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/image_3.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p>Your go-to source for elegant and impactful web design and development.</p>
+                    <a href="#project-showcase" class="btn">Explore Projects</a>
+                    <a href="My Resume.pdf" class="btn resume" download>Download Resume</a>
+                    <button type="button" class="btn about-btn" id="about-btn">About Me</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- phone home page  -->
+    <section class="d-flex justify-content-center align-items-center text-center phone-hero">
+        <div class="container">
+            <h1 class="display-4">Hi, I'm Urooj</h1>
+            <p class="lead">UI Designer, Frontend Developer & App Developer</p>
+            <p class="mt-3">Crafting beautiful interfaces and bringing them to life through code.</p>
+            <button id="downloadResume" class="btn btn-primary mt-4">Download Resume</button>
+        </div>
+    </section>
+
+    <!-- about us  -->
+    <section id="about" class="container my-5">
+        <div class="row align-items-center">
+
+            <div class="col-lg-12">
+                <h2 class="mb-4 heading">About Me</h2>
+                <div class="phone-about-me">
+                    <p id="headskills">My Skills</p>
+                    <div id="phone-keywords">
+                        <h6>#Frontend_Developer</h6>
+                        <h6>#Responsive_Designer</h6>
+                        <h6>#Strong_Communication</h6>
+                        <h6>#UI_Designer (Figma)</h6>
+                        <h6>#Mobile_Application_Developer</h6>
+                        <h6>#Collaborative</h6>
+                        <h6>#Team Managent</h6>
+                        <h6>#Graphic_Designer (Illustrator)</h6>
+                        <h6>#Creativity</h6>
+                        <h6>#Adaptability</h6>
+                    </div>
+
+                    <div class="skills-icon">
+
+                        <!-- HTML -->
+                        <div class="icon">
+                            <img src="assets/images/html.png" alt="HTML Icon">
+                            <div class="tooltip">HTML</div>
+                        </div>
+                        <!-- CSS -->
+                        <div class="icon">
+                            <img src="assets/images/css.png" alt="CSS Icon">
+                            <div class="tooltip">CSS</div>
+                        </div>
+                        <!-- JS -->
+                        <div class="icon">
+                            <img src="assets/images/js.png" alt="JavaScript Icon">
+                            <div class="tooltip">JavaScript</div>
+                        </div>
+                        <!-- java  -->
+                        <div class="icon">
+                            <img src="assets/images/java.png" alt="Java Icon">
+                            <div class="tooltip">Java</div>
+                        </div>
+                        <!-- RD -->
+                        <div class="icon">
+                            <img src="assets/images/responsive.png" alt="Responsive Design Icon">
+                            <div class="tooltip">Responsive Designs</div>
+                        </div>
+                        <!-- MAD -->
+                        <div class="icon">
+                            <img src="assets/images/app-development.png" alt="MAD Icon">
+                            <div class="tooltip">Mobile Application Developer</div>
+                        </div>
+
+                        <!-- UI -->
+                        <div class="icon">
+                            <img src="assets/images/UI.png" alt=UI Icon">
+                            <div class="tooltip">UI Design</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    Hello, I'm <strong>Urooj Islam</strong>, a dedicated <strong>Software Engineering student</strong>
+                    with a strong passion for
+                    <strong>web development</strong> and <strong>Android app development</strong>.
+                    With hands-on experience in <strong>front-end technologies</strong> like <strong>HTML, CSS,
+                        JavaScript, jQuery,
+                        and Bootstrap</strong>, I have honed my skills in creating <strong>visually appealing</strong>
+                    and
+                    <strong>responsive websites</strong>. My understanding of <strong>UI design</strong> principles
+                    further enhances my
+                    ability to deliver <strong>user-friendly interfaces</strong>. Additionally, I am currently expanding
+                    my knowledge
+                    in <strong>Android app development</strong>, building functional and intuitive mobile applications
+                    that improve
+                    user experiences.
+                </p>
+
+                <p>
+                    As one of the <strong>top students</strong> in my class, I consistently strive for excellence in my
+                    studies and
+                    projects. Recently, I had the opportunity to work with a client, which not only solidified my love
+                    for web development but also gave me real-world experience in delivering high-quality solutions.
+                    Currently, I am expanding my knowledge by learning the MERN stack, and I am excited to explore the
+                    limitless possibilities it offers in full-stack development.
+                </p>
+                <p>I am passionate about using technology to create impactful and efficient web solutions, and I am
+                    eager to apply my skills in future projects.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- skills  -->
+    <section id="my-skills" class="container my-5">
+        <h2 class="text-center mb-4 heading">My Core Skills</h2>
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 mb-4 text-center">
+                <i class="fa-solid fa-code"></i>
+                <h4 class="mt-3">Web Development</h4>
+                <p>Experienced in building responsive and dynamic websites with modern technologies like HTML5,
+                    CSS3,
+                    JavaScript, and Bootstrap.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 text-center">
+                <i class="fa-solid fa-laptop"></i>
+                <h4 class="mt-3">Responsive Designs</h4>
+                <p>Proven leadership skills, managing and guiding teams to achieve project goals efficiently.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 text-center">
+                <i class="fa-solid fa-users"></i>
+                <h4 class="mt-3">Team Management</h4>
+                <p>Proven leadership skills, managing and guiding teams to achieve project goals efficiently.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 text-center">
+                <i class="fa-solid fa-spinner "></i>
+                <h4>Smooth Animations</h4>
+                <p>Subtle animations enhance the browsing experience without overwhelming the user.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 text-center">
+                <i class="fa-solid fa-paint-brush"></i>
+                <h4 class="mt-3">UI Designs</h4>
+                <p>Proven leadership skills, managing and guiding teams to achieve project goals efficiently.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 text-center">
+                <i class="fa-solid fa-computer-mouse "></i>
+                <h4>Intuitive Interactions</h4>
+                <p>Interactive elements that are easy to use, making the website accessible to everyone.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Journey Section -->
+    <section id="journey" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 heading"><i class="fa-solid fa-user-graduate"></i> My Academic Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>2022 - Admission to Software Engineering at University of Sindh</h4>
+                    <p>Embarked on my software engineering journey, diving into programming and development while laying
+                        a strong academic foundation.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>First Year - Exploring Programming and Design</h4>
+                    <p>Achieved a CGPA of 3.56 while mastering Java, and pursued graphic design through a
+                        YouTube course, expanding my skill set.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Second Year - Transition to Front-End Development</h4>
+                    <p>Achieved a CGPA of 3.64 <br>
+                        After a year of exploring different areas, I focused on front-end development, building my
+                        expertise and practical experience in web technologies.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Present - Two Years of Front-End Development Experience and Transition to Mobile Application
+                        Development</h4>
+                    <p>With two years of front-end development experience, I successfully completed a project for a
+                        client that received positive feedback, which has solidified my professional growth. <br> I am
+                        currently learning mobile application development using Java.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Statement Section -->
+    <section id="personal-statement" class="text-center  py-5">
+        <div class="container">
+            <h2>Driven by Passion, Committed to Excellence</h2>
+            <p>With a deep passion for technology and a relentless drive to succeed, I am always ready to embrace new
+                challenges and lead my team towards success.</p>
+            <a href="mailto:uroojislamkhan124@gmail.com" class="btn mt-3">Get in Touch</a>
+        </div>
+    </section>
+
+
+    <!-- project showcases  -->
+    <section id="project-showcase" class="container mt-5">
+        <h2 class="text-center mb-4 heading">Project Showcases</h2>
+        <div class="text-center mb-4">
+            <button class="btn  m-1 filter-btn" data-filter="all">All</button>
+            <button class="btn  m-1 filter-btn" data-filter="CSS">Bootsrap5</button>
+            <button class="btn  m-1 filter-btn" data-filter="responsive">Responsive Design</button>
+            <button class="btn  m-1 filter-btn" data-filter="ecom">E-commerce</button>
+            <button class="btn  m-1 filter-btn" data-filter="multipage">Multipage</button>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="CSS">
+                <div class="card h-100">
+                    <video muted controls loop src="assets/videos/my restaurant.mp4" class="card-img-top"
+                        alt="Project 1"></video>
+                    <div class="card-body">
+                        <h5 class="card-title">Restaurant Website</h5>
+                        <p class="card-text">A dynamic web application using the latest CSS Library (Bootstrap 5.3).</p>
+                        <a class="btn btn-primary" href="assets/websites/My Restaurant/index.html">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="responsive">
+                <div class="card h-100">
+                    <video muted controls loop src="assets/videos/responsive netflix.mp4" class="card-img-top"
+                        alt="Project 3"></video>
+                    <div class="card-body">
+                        <h5 class="card-title"> Responsive Netflix Clone </h5>
+                        <p class="card-text">A highly responsive Netflix Clone design that adapts seamlessly to any
+                            device.</p>
+                        <a class="btn btn-primary" href="assets/websites/MyNetflixClone/Index.html">Live Demo</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="ecom">
+                <div class="card h-100">
+                    <video muted controls loop src="assets/videos/ecommerce.mp4" class="card-img-top"
+                        alt="Project 3"></video>
+                    <div class="card-body">
+                        <h5 class="card-title"> Ecommerce Website </h5>
+                        <p class="card-text"> A responsive e-commerce platform with an exceptional UI, offering a
+                            seamless shopping experience across all devices..</p>
+                        <a class="btn btn-primary" href="assets/websites/MyNetflixClone/Index.html">Live Demo</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="responsive" data-category="ecommerce">
+                <div class="card h-100">
+                    <video muted controls loop src="assets/videos/ecommerce.mp4" class="card-img-top"
+                        alt="Project 3"></video>
+                    <div class="card-body">
+                        <h5 class="card-title">E-commerce Website</h5>
+                        <p class="card-text">A highly responsive ecommerce website that with dynamic contents</p>
+                        <a class="btn btn-primary" href="assets/websites/MyEcommerce/index.html">Live Demo</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="multipage" data-category="responsive">
+                <div class="card h-100">
+                    <video muted controls loop src="assets/videos/my hospital.mp4" class="card-img-top"
+                        alt="Project 4"></video>
+                    <div class="card-body">
+                        <h5 class="card-title">Hospital Management System</h5>
+                        <p class="card-text">A highly responsive Netflix Clone design that adapts seamlessly to any
+                            device.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="MadApp container">
+        <h1 class="pro-head">Mobile Application Development - Projetcs</h1>
+        <div class="image-row row">
+
+            <div class="image-card col-lg-8 col-md-6 mb-4">
+                <img src="assets/images/instaApp.png" alt="Product Image 2">
+                <div class="app-description">
+                    <h6>Instagram Clone</h6>
+                    <p><strong>Instagram Homepage Clone</strong>
+                        A sleek, responsive replica of Instagram's homepage with a <strong>top and bottom bar</strong>,
+                        <strong> scrollable
+                            stories and posts</strong>, and <strong>like and comment features.</strong> Built using
+                        <strong>FrameLayout, LinearLayout,
+                            RelativeLayout, and ScrollView</strong> for smooth navigation.
+                    </p>
+                </div>
+
+            </div>
+            <div class="image-card col-lg-8 col-md-6 mb-4">
+                <img src="assets/images/calculatorUIApp.png" alt="Product Image 2">
+                <div class="app-description">
+                    <h6>Calculator App UI</h6>
+                    <p><strong>Calculator App UI</strong>
+                        A clean, minimal interface built using <strong>TableLayout</strong> to align buttons in a grid
+                        format.
+                        The layout ensures smooth interaction with <strong>number keys, operators, and
+                            functions</strong>,
+                        providing an intuitive user experience.
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="image-card col-lg-8 col-md-6 mb-4">
+                <img src="assets/images/bmiApp.png" alt="Product Image 4">
+                <div class="app-description">
+                    <h6>BMI Calculator App</h6>
+                    <p><strong>BMI Calculator</strong>
+                        This app takes your <strong>height (in feet and inches)</strong>, <strong>weight (in
+                            kgs)</strong>, and <strong>age</strong> as input.
+                        It calculates your BMI and informs you whether your health status is <strong>underweight,
+                            normal, or unhealthy</strong>,
+                        providing a simple and effective way to monitor your fitness.
+                    </p>
+                </div>
+
+            </div>
+            <div class="image-card col-lg-6 col-md-6 mb-4">
+                <img src="assets/images/emailApp.png" alt="Product Image 3">
+                <div class="app-description">
+                    <h6>Email App</h6>
+                    <p><strong>Email App</strong>
+                        This app allows users to enter their <strong>name, email, and comment</strong>. On the next
+                        page, the entered details
+                        are displayed, and by clicking a <strong>button</strong>, the app uses <strong>implicit
+                            intent</strong> to open Gmail
+                        with the information pre-filled in an email draft, ready to send.
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class="image-card col-lg-6 col-md-6 mb-4">
+                <img src="assets/images/webApp.png" alt="Product Image 3">
+                <div class="app-description">
+                    <h6>Login App</h6>
+                    <p><strong>Login App</strong>
+                        This app features both <strong>login</strong> and <strong>signup</strong> pages, allowing users
+                        to create an account or
+                        access their existing account easily. Key features include the ability to <strong>send
+                            emails</strong>, view your
+                        <strong>local website</strong>, and access your <strong>online portfolio</strong>. The app
+                        provides a user-friendly interface for seamless authentication.
+                    </p>
+                </div>
+            </div>
+
+            <div class="image-card col-lg-6 col-md-6 mb-4">
+                <img src="assets/images/calculatorApp.png" alt="Product Image 4">
+                <div class="app-description">
+                    <h6>Calculator App</h6>
+                    <p><strong>Calculator App</strong>
+                        This app performs basic operations like <strong>addition, subtraction,
+                            multiplication,</strong>
+                        and <strong>division</strong>, with features like <strong>AC, decimal point,</strong> and
+                        <strong>backspace</strong>.
+                        It has a sleek and intuitive UI for a smooth user experience.
+                    </p>
+                </div>
+
+            </div>
+            <div class="image-card col-lg-6 col-md-6 mb-4">
+                <img src="assets/images/loginApp.png" alt="Product Image 4">
+                <div class="app-description">
+                    <h6>Login App</h6>
+                    <p><strong>Login App</strong>
+                        This app features both <strong>login</strong> and <strong>signup</strong> pages, allowing
+                        users to create an account or
+                        access their existing account easily. It provides a user-friendly interface for seamless
+                        authentication.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- project details  -->
+    <div id="description" class="container my-5">
+        <h1 class=" pro-head">Web Development - Project E-commerce Website</h1>
+
+        <div class="project-preview">
+            <div class="row">
+                <div class="mb-4 project-img">
+                    <img src="assets/images/ecom-ss-1.png" class="first">
+
+                    <img src="assets/images/ecom-ss-2.png" class="second">
+                </div>
+            </div>
+        </div>
+        <div class="mb-4">
+            <h3>Description</h3>
+            <p>This modern e-commerce website offers a seamless shopping experience across all devices, from desktops to
+                smartphones. Built with a responsive design, the website automatically adjusts its layout and features
+                to ensure optimal usability and aesthetics on any screen size.</p>
+        </div>
+        <div class="mb-4">
+            <h3>Technologies Used</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Bootstrap 5</li>
+                <li>jQuery</li>
+            </ul>
+        </div>
+
+
+        <button class="btn btn-primary" id="preview-btn">Preview</button>
+        <div id="preview-video">
+            <button class="btn btn-primary" id="preview-close-btn">Close Preview</button>
+            <video mutes autoplay loop src="assets/videos/my ecommerce.mp4"></video>
+        </div>
+    </div>
+    <!-- certificate sections  -->
+
+    <!-- Certificate Section -->
+    <div class="certificate-container">
+        <h2 class="text-center mb-4 heading">Certificates</h2>
+        <div id="certificate-section" class="row ">
+            <div class="col-12 col-sm-4 col-md- col-lg-4">
+                <div class="certificate-card card">
+                    <img src="assets/images/devtown certificate.jpg" alt="Devtown Certificate" class="card-img-top">
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                <div class="certificate-card card">
+                    <img src="assets/images/MS Certificate.jpg" alt="MS Certificate" class="card-img-top">
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                <div class="certificate-card card">
+                    <img src="assets/images/Coursera HTML5.jpg" alt="Coursera HTML5 Certificate" class="card-img-top">
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                <div class="certificate-card card">
+                    <img src="assets/images/Coursera Logo Designer.jpg" alt="Coursera Logo Designer Certificate"
+                        class="card-img-top">
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                <div class="certificate-card card">
+                    <img src="assets/images/Coursera Java Certificate.jpg" alt="Coursera Java Certificate"
+                        class="card-img-top">
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                <div class="certificate-card card">
+                    <img src="assets/images/Coursera Certificate OOP_Java.jpg" alt="Coursera OOP Java Certificate"
+                        class="card-img-top">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal for Certificate Details -->
+    <!-- <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="certificateModalLabel">Certificate Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Client Reviews Section -->
+    <div id="client" class="container my-5">
+        <h2 class="text-center mb-4 heading">Client Reviews</h2>
+        <div id="client-reviews-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="review-card p-4 text-center">
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <p class="mt-3">"Love the portfolio you designed for me"</p>
+
+                        <p class="blockquote-footer">Meherunisa <cite title="Company Name"> Client</cite>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="review-card p-4 text-center">
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <p class="mt-3">"Outstanding service and quality. Highly recommended!"</p>
+
+                        <p class="blockquote-footer">Client<cite title="Company Name"></cite>
+                        </p>
+                    </div>
+                </div>
+                <!-- Additional reviews go here -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#client-reviews-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                    <i class="fa-solid fa-less-than"></i>
+                </span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#client-reviews-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"><i
+                        class="fa-solid fa-greater-than"></i></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Blog and Articles Section -->
+    <div id="blog" class="container my-5">
+        <h2 class="text-center mb-4">Latest Blog Posts</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="blog-card">
+                    <img src="assets/images/blog_1.jpg" class="img-fluid" alt="Blog Post 1">
+                    <div class="p-3">
+                        <h5>Everything You Need to Know About Cloud Computing</h5>
+
+                        <a href="https://thecodingroom1.blogspot.com/2023/08/understanding-ais-artificial.html"
+                            class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="blog-card">
+                    <img src="assets/images/blog_2.jpg" class="img-fluid" alt="Blog Post 2">
+                    <div class="p-3">
+                        <h5>Mastering Common Programming Interview Questions: In-Depth Guide with Solutions</h5>
+
+                        <a href="https://thecodingroom1.blogspot.com/2023/10/mastering-common-programming-interview.html"
+                            class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="blog-card">
+                    <img src="assets/images/blog_3.jpeg" class="img-fluid" alt="Blog Post 3">
+                    <div class="p-3">
+                        <h5>The Hottest Programming Languages of 2023: Powering the Future of Tech </h5>
+
+                        <a href="https://thecodingroom1.blogspot.com/2023/08/understanding-ais-artificial.html"
+                            class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="blog-card">
+                    <img src="assets/images/blog_4.png" class="img-fluid" alt="Blog Post 4">
+                    <div class="p-3">
+                        <h5>Title: Empowering Creativity: The Low-Code and No-Code Revolution of 2023</h5>
+
+                        <a href="https://thecodingroom1.blogspot.com/2023/08/title-empowering-creativity-low-code.html"
+                            class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="blog-card">
+                    <img src="assets/images/blog_5.jpg" class="img-fluid" alt="Blog Post 5">
+                    <div class="p-3">
+                        <h5>Horizons of Possibility: Unveiling the Future Landscape of Artificial Intelligence</h5>
+
+                        <a href="https://thecodingroom1.blogspot.com/2023/08/horizons-of-possibility-unveiling.html"
+                            class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="blog-card">
+                    <img src="assets/images/blog_6.jpg" class="img-fluid" alt="Blog Post 6">
+                    <div class="p-3">
+                        <h5>Understanding AI's (artificial intelligence) Value in Today's World</h5>
+
+                        <a href="https://thecodingroom1.blogspot.com/2023/08/understanding-ais-artificial.html"
+                            class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- contact  -->
+    <section id="contact-collaboration" class="container my-5">
+        <div class="row">
+
+            <div class="col-md-6">
+                <img src="assets/images/email.svg" class="contact-img">
+            </div>
+            <div class="col-md-6">
+                <h2>Contact & Collaboration</h2>
+                <p>Let's connect! Fill out the form below, and I'll get back to you as soon as possible. You can
+                    also
+                    find me on social media or download my resume for more information.</p>
+
+                <form class="contact-form">
+                    <div class="form-group mb-6">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group mb-6">
+                        <label for="email">Email</label>
+                        <input type="email" id="email_id" name="email_id" class="form-control" placeholder="Your Email"
+                            required>
+                    </div>
+                    <div class="form-group mb-6">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your Message"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn " onclick="sendMail()">Send Message</button>
+                </form>
+
+                <div id="connectme" class="mt-6">
+                    <h5>Connect with me:</h5>
+                    <ul class="social-links list-inline">
+                        <li class="list-inline-item"><a href="https://thecodingroom1.blogspot.com/"
+                                target="_blank">Blog</a>
+                        </li>
+                        <li class="list-inline-item"><a href="https://linkedin.com/in/yourprofile"
+                                target="_blank">LinkedIn</a></li>
+                        <li class="list-inline-item"><a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+                        </li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/the_urooj_islam/"
+                                target="_blank">Instagram</a>
+                        </li>
+                        </li>
+                    </ul>
+                    <a href="My Resume.pdf" class="btn  mt-3" download>Download Resume</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class=" text-center py-4">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h5>Contact Information</h5>
+                    <p>Email: <a href="mailto:uroojislamkhan124@gmail.com"
+                            class="text-white">uroojislamkhan124@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-md-4 ">
+                    <h5>Follow Me</h5>
+                    <ul class="footer-social-links">
+                        <a href="https://www.linkedin.com/in/urooj-islam-734488255/" class="text-white mx-2"
+                            target="_blank"><i class="fab fa-linkedin "></i></a>
+                        <a href="https://github.com/yourusername" class="text-white mx-2" target="_blank"><i
+                                class="fab fa-github "></i></a>
+                        <a href="https://thecodingroom1.blogspot.com/" class="text-white mx-2" target="_blank"><i
+                                class="fa-solid fa-blog "></i></a>
+                        <a href="https://www.instagram.com/the_urooj_islam/" class="text-white mx-2" target="_blank"><i
+                                class="fab fa-instagram "></i></a>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-links">
+                    <h5>Qucik Links</h5>
+                    <ul>
+                        <li><a href="#carouselExampleCaptions" alt="home"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li><a href="#project-showcase" alt="Projects"><i class="fa-solid fa-briefcase"></i>Projects</a>
+                        </li>
+
+                        <li><a href="#my-skills" alt="skills"><i class="fa-solid fa-cog"></i>Services</a>
+                        </li>
+
+                        <li><a href="#blog" alt="blog"><i class="fa-solid fa-blog"></i>Blogs</a></li>
+
+                        <li><a href="mailto:uroojislamkhan124@gmail.com" alt="contact"><i
+                                    class="fa-solid fa-envelope"></i>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 footer-copyright">
+            <p>&copy; 2024 Urooj Islam. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="assets/script.js"></script>
+    <script src="from.js"></script>
+</body>
+
+</html>
