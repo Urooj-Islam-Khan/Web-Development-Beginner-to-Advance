@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter Two</title>
+    <style>
+        /* .container{
+            background-color: rgb(142, 212, 12);
+            color: white;
+        } */
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+     
+
+        
+        .container{
+            height: 400px;
+            width: 400px;
+           background-image: url(pic5.jpg);
+            background-repeat: no-repeat; 
+           background-position: center; 
+           background-size:cover;
+
+        }
+        .navigation-bar ul{
+            background: blue;
+            color: white;
+        }
+        .navigation-bar li{
+            text-decoration: none;
+            align-items: center;
+            display: flex;
+            display: inline-block;
+            justify-content: space-between;
+            padding-left: 10%;
+            padding-top: 2%;
+            font-size: 20px;
+            padding-right:7% ;
+            text-transform: capitalize;
+        }
+        .main{
+            color: red;
+        }
+        .bg{width: 400px;
+            height: 1000px;
+            background-image: url(pic4.jpg);
+            background-repeat: no-repeat;
+            background-color: pink;
+            background-size: 250px 250px;
+            background-attachment:fixed;
+        }
+        .bg-shorthand{
+        
+            width: 200px;
+            height: 200px;
+/*  background: color image repeat attachment position */
+            background: yellow url(pic3.jpeg) no-repeat scroll ;
+           
+        }
+
+    </style>
+</head>
+<body>
+  
+
+    <div class="navigation-bar">
+        <!-- Q1: create a dark blue navigation barwith light color items -->
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Skills</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="main">
+        <!-- Q2: Change the color of the main container on your page to dark red -->
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quaerat sit unde delectus nihil, atque maxime omnis, labore beatae quae nesciunt odio! Et esse atque est porro! Quis, quas distinctio!
+    </div>
+    <div class="container">
+        <!-- Q3: crate a div and add a image with giving height and width -->
+    </div>
+    <div class="bg">
+        <!-- create a vertical box and add all a fixed non scrolling background to it -->
+    </div>
+    <div class="bg-shorthand">
+        <!-- verify that the backgroung shorthand property works with some of the values skipped -->
+
+    </div>
+</body>
+</html>

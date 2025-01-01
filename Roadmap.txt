@@ -1,0 +1,40 @@
+ Roadmap 
+
+Step 1: (Frontent)
+HTML-> CSS-> JS
+
+Step 2: (Projects)
+1: Clone,   2: Portfolio   
+
+Step 3: (CSS Frameworks)
+1: Bootstrap  2: Tailwind   3: React
+
+Step 4: (Bakend)
+Node.js 
+to Learn in Bakend(
+Templating
+Error handling
+Responce Cycle
+Requests
+Protocols
+API
+)
+
+Step 5: (DataBase)
+1: SQL (for Django)
+2: MongoDB (for Node.js)
+
+Step 6: (Essential)
+1: Terminal Commands 
+2: Git/Github     
+3: Deployment
+
+Step 7: Full Stack Developer
+
+1: End to End Projects
+
+Step 8: (Apply)
+1: Internships
+2: Jobs
+3: Freelancing
+

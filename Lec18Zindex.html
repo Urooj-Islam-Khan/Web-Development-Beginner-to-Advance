@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 170px;
+        height: 170px;
+        border: 3px solid black;
+    }
+
+    #box1 {
+        background-color: yellow;
+        position: relative;
+        top: 49px;
+        z-index: 35;
+    }
+
+    #box2 {
+        /* visibility: hidden; */
+        /* visibility: hidden; used to hide the content but it reserved place 
+         */
+
+        /* display: none; */
+        /*display: none; used to hide the content and reserved place too
+         */
+
+        /* z-index:will work only for position: relative, absolute, fixed or sticky; */
+        /* jiska z-index zyada hoga wo uper hoga */
+        z-index: 34;
+        position: relative;
+        top: 14px;
+        background-color: blue;
+    }
+
+    #box3 {
+        background-color: green;
+    }
+
+    #box4 {
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>

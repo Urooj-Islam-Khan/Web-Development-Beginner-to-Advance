@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditionals</title>
+    <style>
+        ul li {
+            list-style-type: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div>ul>li{Items-$}*7  short cut of the given code
+     -->
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+
+    <script>
+        // var ka scope global hota hai or ye redefine hoskta hai
+        var string1 = "This is a string";
+        var string1 = "This is a string2";
+        console.log(string1);
+
+        // let ka scope usi function me hota hai or ye redefine nhi hota hai
+        let a = "A";
+        {
+            // is   let a = "U"; iska scope isi racket me hai
+            let a = "U";
+            // let a="A"; ye redifined nhi hoga blke error dedega
+            console.log(a);
+        }
+
+        console.log(a)
+
+        // ye constant hai javascript hai 
+        const constant = "This can not be change because it is constant!";
+        console.log(constant)
+
+        let age = 19;
+
+
+    </script>
+</body>
+
+</html>

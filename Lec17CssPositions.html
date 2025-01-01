@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Positions</title>
+    <style>
+        /* position: 
+        1: static(default),
+         
+        2: absolute, 
+        
+        3: relative, we can use top, bottom, left, right properties
+
+         4: fixed,
+        5: static */
+
+          /* relative means relative to its normal position
+          absolute me gap hota hai */
+
+          /* absolut means relative to its normal position
+          absolute me gap nhi hota */
+
+        .container{
+            width: 3440px;
+            height: 3440px;
+        }
+        .box{
+            display: inline-block;
+            border: 2px solid yellow;
+            height: 500px;
+            width: 500px;
+            margin: 2px;
+        }
+        #box1{
+            position:fixed;
+            /* top: 34px;
+            left: 34px; */
+        }
+        #box2{
+            position:fixed;
+            right: 60px;
+            /* top: 34px;
+            left: 34px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

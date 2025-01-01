@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and input tags</title>
+</head>
+<body>
+    <h2>This is HTML Forms</h2>
+    <form action="backen.php">
+        <label for="name">Name:</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRoll">
+           
+        </div>
+        <br>
+        <div>
+             Email: <input type="email" name="myEmail" >
+        </div>
+        <br>
+        <div>
+          Age <input type="number" name="myNumber" >
+        </div>
+        <br>
+        <label for="chkbox"> Are you Eligible</label>
+        <div>
+           <input type="checkbox" name="myCheckBox" id="chkbox">
+           <!--<input type="checkbox" name="myCheckBox"checked>-->
+        </div>
+        <br>
+        <div>
+           Gendre: Male <input type="radio" name="myGendre" > Female <input type="radio" name="myGendre" > Other <input type="radio" name="myGendre" >
+         </div>
+         <br>
+        <div>
+           Date <input type="date" name="myDate" >
+        </div>
+        <br>
+        <div>
+         Write about yourself  <br><textarea name="myTextArea" cols="90" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car"></label>
+            <select name="myCar" id="car">
+                <option value="Toyota"> Toyota</option>
+                <option value="swf" selected>Swift</option> <!--selected used for show in selection bar-->
+            </select>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+     
+       
+    </form>
+</body>
+</html>
